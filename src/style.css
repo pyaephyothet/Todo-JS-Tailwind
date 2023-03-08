@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.focus-style {
+  margin: 0rem;
+  padding: 0.3rem  !important;
+  border: 0.2rem solid #86C8BC !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 1rem;
+}
+
+.task i {
+    font-size: 0.8rem;
+}
+
+.task input {
+  padding: 0.55rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 18rem;
+}
+
+.task .todo-item {
+    width: 22rem;
+}
+
+.task input:hover {
+    background-color: #EAEAEA;
+}
+
+.task button {
+    line-height: 0;
+    margin-left: 0.5rem;
+    padding: 0.9rem 1rem;
+    border: none;
+    background-color: #EB455F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #DF2E38;
+  border-radius: 0.5rem;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+     width: 20px !important;
+}
+
+.option > button:focus, .option button.active{
+  border: none;
+  background-color: #539165;
+  color: #fff;
+}
+
+#todoList {
+    max-height: 250px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: #86C8BC;
+  width: 4px;
+}
